@@ -9,4 +9,4 @@ You can specify parameters(and their default values):
 5. TARGET_PORT=4096
 6. KEY=""
 7. RAW_MODE=faketcp
-8. OTHER_PARAM="" #like -a
+8. ARGS="" #like -a
