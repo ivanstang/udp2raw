@@ -15,6 +15,6 @@ ENV TARGET_IP=127.0.0.1
 ENV TARGET_PORT=4096
 ENV KEY=""
 ENV RAW_MODE=faketcp
-ENV OTHER_PARAM=""
+ENV ARGS=""
 
-ENTRYPOINT [ "/bin/sh", "-c", "/app/udp2raw -${MODE} -l ${LISTEN_IP}:${LISTEN_PORT} -r ${TARGET_IP}:${TARGET_PORT} -k ${KEY} --raw-mode ${RAW_MODE} ${OTHER_PARAM}" ]
+ENTRYPOINT [ "/bin/sh", "-c", "/app/udp2raw -${MODE} -l ${LISTEN_IP}:${LISTEN_PORT} -r ${TARGET_IP}:${TARGET_PORT} -k ${KEY} --raw-mode ${RAW_MODE} ${ARGS}" ]
