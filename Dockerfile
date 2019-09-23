@@ -3,7 +3,7 @@ LABEL maintainer="York <ivanstang0415@gmail.com>"
 
 RUN mkdir /app \
  && cd /app \
- && wget https://github.com/wangyu-/udp2raw-tunnel/releases/download/20181113.0/udp2raw_binaries.tar.gz \
+ && wget https://github.com/wangyu-/udp2raw-tunnel/releases/download/20180225.1/udp2raw_binaries.tar.gz \
  && tar xvfz udp2raw_binaries.tar.gz \
  && ls | grep -v -w udp2raw_amd64 | xargs rm \
  && mv udp2raw_amd64 udp2raw
